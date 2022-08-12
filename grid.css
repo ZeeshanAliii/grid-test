@@ -1,0 +1,71 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.grid-container {
+  margin: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  grid-template-areas:
+    "header header header" /*if you have 3 columns make it match with by adding 3 characters*/
+    "menu main right"
+    "menu footer footer";
+}
+
+.header {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center; /*if you need to move text to center, always target its parent of the h1  master grid and then flexbox*/
+  align-items: center;
+
+  border: 1px black solid;
+  background-color: blue;
+  grid-area: header;
+}
+.menu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  background-color: aquamarine;
+  grid-area: menu;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  background-color: red;
+  grid-area: main;
+}
+.right {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  background-color: blueviolet;
+  grid-area: right;
+}
+.footer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  background-color: greenyellow;
+  grid-area: footer;
+}

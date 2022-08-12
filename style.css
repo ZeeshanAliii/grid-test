@@ -1,0 +1,57 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.grids-container {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(1fr 1fr 1fr);
+  border: 1px solid black;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "sidebar footer footer";
+
+  /* expand your size on your writing */
+  /* tell ali u need help with trying to expand and not crash everything while using frs */
+}
+
+.gridss {
+  border: 1px solid black;
+  background-color: aquamarine;
+  height: 600px;
+  width: 900px;
+
+  display: flex;
+  align-items: center;
+  /* the grids */
+}
+
+.grid1 {
+  grid-area: header;
+  height: 100%;
+  width: 100%;
+}
+
+.grid2 {
+  grid-area: sidebar;
+  height: 100%;
+  width: 100%;
+}
+
+.grid3 {
+  grid-area: content;
+  height: 100%;
+  width: 100%;
+}
+
+.grid4 {
+  grid-area: footer;
+  height: 100%;
+  width: 100%;
+}
